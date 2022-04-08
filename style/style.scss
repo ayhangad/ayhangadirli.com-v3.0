@@ -126,6 +126,9 @@ section {
     max-width: 600px;
     height: fit-content;
 }
+#tags-mobile{
+    display: none;
+}
 .tag {
     display: flex;
     align-items: center;
@@ -246,6 +249,9 @@ section {
 .footer-mail:hover {
     color: $primaryColor;
 }
+#footer-social{
+    display: none;
+}
 
 @media screen and (max-width: 1059px){
     .tablet{
@@ -266,6 +272,37 @@ section {
     }
     .social-links{
         margin-right: 16px;
+    }
+    #footer-social{
+        display: flex;
+        width: 96px;
+
+        margin-right: 0;
+    }
+    .footer-mobile{
+        margin-top: 140px;
+        justify-content: space-between;
+
+    }
+    .footer-mobile .footer-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .footer-mobile .footer-text {
+        margin: 0 0 8px 0;
+        text-decoration: none;
+        font-size: 12px;
+        color: $paragraphText;
+    }
+    .footer-mobile .footer-char-high {
+        color: $footerCharHigh;
+    }
+    .footer-mobile .footer-mail{
+        color: $paragraphText;
+    }
+    .footer-mobile .footer-mail:hover {
+        color: $primaryColor;
     }
     
 }
@@ -302,7 +339,7 @@ section {
     .tags{
         display: none;
     }
-    .tags-mobile{
+    #tags-mobile{
         display: flex;
         margin-top: 16px;
     }
@@ -315,35 +352,8 @@ section {
     .works{
         margin-top: 78px;
     }
-    .footer-social{
-        display: flex;
-        width: 96px;
-
-        margin-right: 0;
-    }
-    .footer-mobile{
-        margin-top: 140px;
-        justify-content: space-between;
-
-    }
-    .footer-mobile .footer-div{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
     .footer-mobile .footer-text {
-        margin: 0 0 8px 0;
-        text-decoration: none;
         font-size: 10px;
-        color: $paragraphText;
     }
-    .footer-mobile .footer-char-high {
-        color: $footerCharHigh;
-    }
-    .footer-mobile .footer-mail{
-        color: $paragraphText;
-    }
-    .footer-mobile .footer-mail:hover {
-        color: $primaryColor;
-    }
+    
 }

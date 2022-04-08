@@ -162,6 +162,10 @@ section {
   height: fit-content;
 }
 
+#tags-mobile {
+  display: none;
+}
+
 .tag {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -342,6 +346,10 @@ section {
   color: #503ce9;
 }
 
+#footer-social {
+  display: none;
+}
+
 @media screen and (max-width: 1059px) {
   .tablet {
     margin: 0 16px;
@@ -361,6 +369,46 @@ section {
   }
   .social-links {
     margin-right: 16px;
+  }
+  #footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 96px;
+    margin-right: 0;
+  }
+  .footer-mobile {
+    margin-top: 140px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-mobile .footer-div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer-mobile .footer-text {
+    margin: 0 0 8px 0;
+    text-decoration: none;
+    font-size: 12px;
+    color: #6a668f;
+  }
+  .footer-mobile .footer-char-high {
+    color: #cdcae1;
+  }
+  .footer-mobile .footer-mail {
+    color: #6a668f;
+  }
+  .footer-mobile .footer-mail:hover {
+    color: #503ce9;
   }
 }
 
@@ -401,7 +449,7 @@ section {
   .tags {
     display: none;
   }
-  .tags-mobile {
+  #tags-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -416,45 +464,8 @@ section {
   .works {
     margin-top: 78px;
   }
-  .footer-social {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 96px;
-    margin-right: 0;
-  }
-  .footer-mobile {
-    margin-top: 140px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .footer-mobile .footer-div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
   .footer-mobile .footer-text {
-    margin: 0 0 8px 0;
-    text-decoration: none;
     font-size: 10px;
-    color: #6a668f;
-  }
-  .footer-mobile .footer-char-high {
-    color: #cdcae1;
-  }
-  .footer-mobile .footer-mail {
-    color: #6a668f;
-  }
-  .footer-mobile .footer-mail:hover {
-    color: #503ce9;
   }
 }
 /*# sourceMappingURL=style.css.map */
